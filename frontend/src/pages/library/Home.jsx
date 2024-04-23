@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import Spinner from '../components/Spinner';
+import Spinner from '../../components/Spinner.jsx';
 import {Link, useNavigate, useParams} from 'react-router-dom';
 import {MdOutlineAddBox} from 'react-icons/md';
 import axios from "axios";
-import BooksTable from "../components/home/BooksTable.jsx";
-import BooksCard from "../components/home/BooksCard.jsx";
+import BooksTable from "../../components/home/BooksTable.jsx";
+import BooksCard from "../../components/home/BooksCard.jsx";
 
 const Home = () => {
     const [books, setBooks] = useState([]);
@@ -53,6 +53,9 @@ const Home = () => {
     return (
         <div className='p-4'>
             <div className='flex justify-center items-center gap-x-4'>
+                <button className='bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg' onClick={('/jobify/login')}>
+                    <Link to='/jobify/login'>Jobify</Link>
+                </button>
                 <button className='bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg'
                         onClick={() => setShowType('table')}>
                     Table

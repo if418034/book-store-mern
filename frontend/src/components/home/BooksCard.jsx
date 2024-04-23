@@ -1,5 +1,4 @@
 import React from 'react';
-import {PiBookOpenTextLight} from "react-icons/pi";
 import {BiUserCircle} from "react-icons/bi";
 import {Link} from "react-router-dom";
 import {BsInfoCircle} from "react-icons/bs";
